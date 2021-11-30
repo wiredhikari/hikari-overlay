@@ -348,9 +348,6 @@ IUSE="libressl"
 BDEPEND="
 	>=virtual/rust-1.31.0
 "
-
-# sass-rs looks for the wrong .pc
-# dev-libs/libsass:0=
 RDEPEND="
 	dev-libs/oniguruma:0=
 	libressl? ( dev-libs/libressl:0= )
