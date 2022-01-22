@@ -58,14 +58,14 @@ inherit cargo
 DESCRIPTION="A fetch utility for the love of penguins but in Rust"
 # Double check the homepage as the cargo_metadata crate
 # does not provide this value so instead repository is used
-HOMEPAGE="https://github.com/atharvaamritkar/tuxfetch"
+HOMEPAGE="https://github.com/wiredhikari/tuxfetch"
 inherit git-r3
-EGIT_REPO_URI="https://github.com/AtharvaAmritkar/tuxfetch"
+EGIT_REPO_URI="https://github.com/wiredhikari/tuxfetch"
 MY_PV="${PV//_rc/-rc}"
 S="${WORKDIR}/${PN}-${MY_PV}"
 #SRC_URI="https://github.com/AtharvaAmritkar/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz
 #$(cargo_crate_uris ${CRATES})"
-SRC_URI="https://github.com/AtharvaAmritkar/tuxfetch/archive/refs/tags/0.1.0.tar.gz"
+SRC_URI="https://github.com/wiredhikari/tuxfetch/archive/refs/tags/0.1.0.tar.gz"
 RESTRICT="mirror"
 # License set may be more restrictive as OR is not respected
 # use cargo-license for a more accurate license picture
